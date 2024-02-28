@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS film (
     filmId BIGINT PRIMARY KEY,
     title VARCHAR(255),
     description VARCHAR(255),
-    "year" INT,
+    "YEAR" INT,
     rental_duration INT,
     rating VARCHAR(255),
     duration INT,
@@ -48,7 +48,7 @@ INSERT INTO Category (categoryId, name, description) VALUES
 (3, 'Comedy', 'Funny and entertaining movies');
 
 -- Datos para la tabla Film
-INSERT INTO Film (filmId, title, description, "year", rental_duration, rating, duration, rental_price) VALUES
+INSERT INTO Film (filmId, title, description, "YEAR", rental_duration, rating, duration, rental_price) VALUES
 (1, 'The Matrix', 'A sci-fi action film', 1999, 2, 'R', 136, 2.99),
 (2, 'The Shawshank Redemption', 'A drama film about hope', 1994, 3, 'R', 142, 2.49),
 (3, 'Dumb and Dumber', 'A comedy film with slapstick humor', 1994, 2, 'PG-13', 107, 1.99);
