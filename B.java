@@ -35,6 +35,9 @@ public class B {
                 int[][] matrix = new int[rows][columns];
                 
                 int count = n;
+
+                int sum =0;
+
                 
                 for(int i = 0; i < matrix.length; i++) {
                     for (int j = 0; j < matrix[i].length; j++) {
@@ -45,6 +48,8 @@ public class B {
                         else{
                             if(j+1 == n){
                                 System.out.print(n + " "); 
+                                sum+=n;
+
                             }else{
                                 System.out.print(0 + " "); 
                             }
@@ -55,8 +60,8 @@ public class B {
                     n--;
                     System.out.println();
                 }
-                
-                
+                System.out.println(sum);
+
             } else {
                 System.out.println("Número fuera de rango. Debe ser un número entero no negativo y n <= 100000.");
             }
