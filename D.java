@@ -15,23 +15,29 @@ public class D {
      public static void main(String[] args) {
          Scanner scanner = new Scanner(System.in);
 
-
+        System.out.print("Ingrese un número entero sin signo (n <= 100000): ");
         int number = scanner.nextInt();
         
-        int squared = number * number;
+        if (number > 0 && number <= 1000000) {
+        
+            int squared = number * number;
 
-        String numberStr = String.valueOf(number);
-        String squaredStr = String.valueOf(squared);
+            String numberStr = String.valueOf(number);
+            String squaredStr = String.valueOf(squared);
 
-        boolean cuadrado = squaredStr.endsWith(numberStr);
+            boolean cuadrado = squaredStr.endsWith(numberStr);
 
-        if (cuadrado) {
-            System.out.println("SI");
+            if (cuadrado) {
+                System.out.println("SI");
+            } else {
+                System.out.println("NO");
+            }
+
+            scanner.close();
+        
         } else {
-            System.out.println("NO");
+            System.out.println("Numero no es valido intene nuevamente");
         }
-
-        scanner.close();
     }
 
 
